@@ -1,12 +1,192 @@
 <!doctype html>
-<html lang="th">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Watunyou S.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Watunyou Sailuang — Full-stack Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0d1117;
+        --surface: #161b22;
+        --border: #21262d;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --accent: #58a6ff;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Inter", system-ui, sans-serif;
+        line-height: 1.7;
+        padding: 4rem 1.5rem;
+      }
+
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 2rem;
+        margin-bottom: 2.5rem;
+      }
+
+      h1 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      .role {
+        color: var(--accent);
+        font-weight: 500;
+        margin-top: 0.25rem;
+      }
+
+      .meta {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-top: 0.75rem;
+      }
+
+      .meta a {
+        color: var(--muted);
+        text-decoration: none;
+        border-bottom: 1px dotted var(--muted);
+      }
+
+      .meta a:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+
+      section {
+        margin-bottom: 2.5rem;
+      }
+
+      h2 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--muted);
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: #c9d1d9;
+        margin-bottom: 0.85rem;
+      }
+
+      /* Tech stack chips */
+      .stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .chip {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 0.3rem 0.7rem;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.8rem;
+        color: var(--text);
+      }
+
+      /* Project cards */
+      .project {
+        border-left: 2px solid var(--border);
+        padding-left: 1.1rem;
+        margin-bottom: 1.4rem;
+      }
+
+      .project:hover {
+        border-color: var(--accent);
+      }
+
+      .project h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.2rem;
+      }
+
+      .project p {
+        font-size: 0.92rem;
+        color: var(--muted);
+        margin: 0;
+      }
+
+      footer {
+        border-top: 1px solid var(--border);
+        padding-top: 1.5rem;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+    </style>
   </head>
   <body>
-    <h1>Watunyou S.</h1>
-    <p>Developer, GLS/BDMS</p>
-    <p>Email: watunyou.sa@bdms.co.th</p>
+    <div class="wrap">
+      <header>
+        <h1>Watunyou Sailuang</h1>
+        <div class="role">Full-stack Developer</div>
+        <div class="meta">
+          GLS / BDMS &nbsp;·&nbsp; Phuket, Thailand<br />
+          <a href="mailto:watunyou.sa@bdms.co.th">watunyou.sa@bdms.co.th</a>
+          &nbsp;·&nbsp;
+          <a href="https://github.com/sekwtus">github.com/sekwtus</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>About</h2>
+        <p>
+          I build internal systems for hospital operations — web applications,
+          ETL pipelines, and integrations with hospital information systems.
+          My work spans the full stack: React frontends, Node.js services,
+          PostgreSQL data layers, and the Windows Server infrastructure they
+          run on.
+        </p>
+        <p>
+          Most of what I do involves moving clinical and operational data
+          safely between systems that were never designed to talk to each
+          other, and turning it into something clinicians and administrators
+          can actually use.
+        </p>
+      </section>
+
+      <section>
+        <h2>Stack</h2>
+        <div class="stack">
+          <span class="chip">TypeScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Vite</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+          <span class="chip">NestJS</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">Prisma</span>
+          <span class="chip">React Native</span>
+          <span class="chip">ASP.NET WebForms</span>
+          <span class="chip">SQLite</span>
+          <span class="chip">Firebase</span>
+          <span class="chip">IIS</span>
+        </div>
+      </section>
+      <footer>© 2026 Watunyou S.</footer>
+    </div>
   </body>
 </html>
